@@ -6,7 +6,7 @@ const inquirer = require('inquirer');
 const connection = mysql.createPool({
     host: 'localhost',
     user: 'root',
-    password: 'your_password',
+    password: '4Maxfam5',
     database: 'employee_db'
 });
 
