@@ -4,6 +4,8 @@ const inquirer = require('inquirer');
 const mysql = require('mysql2/promise');
 const { viewDepartments, viewRoles, viewEmployees, addDepartment, addRole, addEmployee, updateEmployeeManager, viewEmployeesByManager, viewEmployeesByDepartment, deleteDepartment, deleteRole, deleteEmployee, viewDepartmentBudget } = require('./queries');
 
+console.log("Welcome to the Employee Manager!");
+
 const mainMenu = async () => {
     const { action } = await inquirer.prompt([
         {
